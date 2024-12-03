@@ -1,4 +1,3 @@
+import { links } from './da';
 
-import { links } from "./da"
-
-export type Section = (typeof links)[number]["name"]
+export type Section = (typeof links)[number]['name'];

@@ -1,11 +1,11 @@
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/app"
+  - package-ecosystem: 'npm' # See documentation for possible values
+    directory: '/app'
     schedule:
-      interval: "weekly"
+      interval: 'weekly'
     commit-message:
       # Prefix all commit messages with "npm: "
-      prefix: "npm"
+      prefix: 'npm'
     labels:
-      - "npm dependencies"
+      - 'npm dependencies'

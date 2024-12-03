@@ -1,23 +1,38 @@
-'use client'
+'use client';
 
-import { motion } from 'framer-motion';
 import { footerVariants } from '@/lib/motion';
+import { motion } from 'framer-motion';
 
 export default function Footer() {
-  return (
-    <section className='pb-10 w-full flex  md:px-[40px] '>
-    <motion.div
-    variants={footerVariants}
-    initial="hidden"
-    whileInView="show"
-  >
-        <p className=' text-[13px] leading-6 text-gray-400  '>
-            Layout inspired by <a className=' text-gray-200 font-semibold' href='https://brittanychiang.com' target="_blank" rel="noreferrer noopener" aria-label="Brittany (opens in a new tab)">Brittany</a>. 
-            Designed in figma, and code written in TypeScript and NextJs by Me☺️. Find it on <a className=' text-gray-200 font-semibold' target="_blank" rel="noreferrer noopener" aria-label="GitHub (opens in a new tab)" href='https://github.com/Ojochogwu866/portfolio-v3'>Github</a>.
-        </p>  
-         <div className="flex justify-end items-end absolute -mt-20 w-[200px] h-[80px] gradient-04" />
-    </motion.div>
-   
-    </section>
-  )
+	return (
+		<section className="flex w-full pb-10 md:px-[40px]">
+			<motion.div variants={footerVariants} initial="hidden" whileInView="show">
+				<p className="text-[13px] leading-6 text-gray-400">
+					Layout inspired by{' '}
+					<a
+						className="font-semibold text-gray-200"
+						href="https://brittanychiang.com"
+						target="_blank"
+						rel="noreferrer noopener"
+						aria-label="Brittany (opens in a new tab)"
+					>
+						Brittany
+					</a>
+					. Designed in figma, and code written in TypeScript and NextJs by
+					Me☺️. Find it on{' '}
+					<a
+						className="font-semibold text-gray-200"
+						target="_blank"
+						rel="noreferrer noopener"
+						aria-label="GitHub (opens in a new tab)"
+						href="https://github.com/Ojochogwu866/portfolio-v3"
+					>
+						Github
+					</a>
+					.
+				</p>
+				<div className="gradient-04 absolute -mt-20 flex h-[80px] w-[200px] items-end justify-end" />
+			</motion.div>
+		</section>
+	);
 }

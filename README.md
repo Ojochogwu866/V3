@@ -23,21 +23,25 @@ Welcome to my personal portfolio website, showcasing my development experience, 
 To run this project locally, follow these steps:
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/your-username/ojochogwu-portfolio.git
    ```
 
 2. Navigate to the project directory:
+
    ```
    cd ojochogwu-portfolio
    ```
 
 3. Install dependencies:
+
    ```
    npm install
    ```
 
 4. Run the development server:
+
    ```
    npm run dev
    ```
@@ -60,7 +64,6 @@ src/
 ## Deployment
 
 This portfolio is deployed on Vercel. Any push to the `main` branch will trigger an automatic deployment.
-
 
 ## Contributing
 

@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
-import AllExperiencesprojects from "@/components/All-Experiences-projects"
+import AllExperiencesprojects from '@/components/All-Experiences-projects';
 
 export default function Home() {
-  return (
-      <main className=" px-[20px] md:px-[80px] mx-auto md:w-9/12">
-        <AllExperiencesprojects/>
-      </main>
-  )
+	return (
+		<main className="mx-auto px-[20px] md:w-9/12 md:px-[80px]">
+			<AllExperiencesprojects />
+		</main>
+	);
 }
