@@ -15,49 +15,54 @@ export const links = [
 
 export const projects = [
 	{
-		project: 'You Read',
+		project: 'Anker',
 		description:
-			'Book Reading app for keeping tabs of your reading adventures, documenting your reading experience, like book genre covered in a period of time, total number of pages read, and getting access to latest books and best selling, by fetching  the boks data from New York Times API.',
-		url: 'you-read.vercel.app',
+			'E-commerce platform for the African fabrics market. Built a scalable marketplace connecting fabric vendors with customers across Africa, featuring product catalog management, secure payment processing, and multi-currency support for regional markets.',
+		url: 'anker.ojochogwu.dev',
 	},
 	{
-		project: 'Fiction Factory',
+		project: 'Codon',
 		description:
-			'Hiring platform for fiction writters. Hire vetted plot writters to do your story telling, buy manuscripts and get your worsk published at very low cost. Also, you get paid to do your writting Job',
-		url: 'fictionfactory.com',
+			'Chemical intelligence toxicity prediction system leveraging machine learning algorithms. Developed a comprehensive platform for predicting chemical compound toxicity, environmental impact assessment, and safety analysis for research institutions and pharmaceutical companies.',
+		url: 'codonlabs.ojochogwu.dev',
 	},
 	{
-		project: 'ReDux',
+		project: 'NextGen',
 		description:
-			' Work In Progress: Open source software for dicumentation teams and developer expereince teams to measure the performance of their documentations and gain quality insight on how to improve',
-		url: 'redux.verce.app',
+			'High-performance mentorship platform with automated event scheduling and Google Calendar integration. Built secure APIs, real-time notifications, and seamless mentor-mentee connection system for enhanced learning experiences.',
+		url: 'nextgen.xyz',
 	},
 ] as const;
 
 export const experiences = [
 	{
-		organization: 'Mediboards',
+		organization: 'Product 7',
 		description:
-			'Engineered a sophisticated multi-tenant digital signage system for healthcare facilities with hierarchical sub-account management. Implemented secure data isolation, role-based access control, and automated CI/CD pipelines while maintaining HIPAA, NDPR and NHA compliance.',
+			'Developed customer feedback and feature voting system with Nuxt 3 featuring SSR/CSR architecture. Implemented tenant isolation, dynamic roadmap visualizations, real-time upvoting with WebSockets, and OAuth integration with JWT token management.',
 	},
 	{
-		organization: 'NextGen',
+		organization: 'Ignite',
 		description:
-			'Engineered a high-performance mentorship platform with automated event scheduling and Google Calendar integration. Led the development of both frontend and backend components, implementing secure APIs and real-time notifications for seamless mentor-mentee connections.',
+			'Led development of a Nuxt-based cloud Platform-as-a-Service (PaaS) solution. Architected scalable frontend infrastructure, engineered comprehensive monitoring systems with real-time metrics, and built environment management platform reducing configuration time by 70%.',
+	},
+	{
+		organization: 'Mlooop',
+		description:
+			'Deployed complete AWS infrastructure using CDK with infrastructure as code practices. Achieved 96/100 Lighthouse performance score, designed optimized PostgreSQL schema with sub-150ms response times, and reduced infrastructure costs by 40%.',
+	},
+	{
+		organization: 'Mediboards',
+		description:
+			'Engineered comprehensive digital signage and patient management system for healthcare facilities. Architected sophisticated multi-tenant system with hierarchical sub-account management, ensuring NDPR and NHA compliance with robust CI/CD pipeline.',
 	},
 	{
 		organization: 'Clinikli',
 		description:
-			'Developed a Vue.js healthcare platform connecting patients with medical professionals through location-based matching. Implemented advanced search algorithms and payment integration while maintaining modular, scalable architecture.',
+			'Engineered scalable Vue.js application serving hundreds of monthly users, reducing patient-to-doctor matching time by 75%. Implemented advanced geospatial search system and built modular component architecture with 98% code reuse.',
 	},
 	{
 		organization: 'Sonvisage',
 		description:
-			'Built a responsive healthcare management platform focusing on efficient data handling and bulk operations. Engineered optimized state management solutions and implemented real-time IoT data collection through REST APIs.',
-	},
-	{
-		organization: 'Vinca',
-		description:
-			'Developed a comprehensive patient-doctor appointment booking system with admin dashboard. Built responsive interfaces and real-time messaging features, ensuring seamless healthcare service delivery.',
+			'Developed pixel-perfect healthcare management platform with efficient data handling. Engineered bulk upload system handling 10,000+ records, reducing processing time from 3 minutes to 8 seconds, and achieved 65% reduction in bundle size.',
 	},
 ] as const;
