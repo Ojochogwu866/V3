@@ -8,17 +8,7 @@ export default function Footer() {
 		<section className="flex w-full pb-10 md:px-[40px]">
 			<motion.div variants={footerVariants} initial="hidden" whileInView="show">
 				<p className="text-[13px] leading-6 text-gray-400">
-					Layout inspired by{' '}
-					<a
-						className="font-semibold text-gray-200"
-						href="https://brittanychiang.com"
-						target="_blank"
-						rel="noreferrer noopener"
-						aria-label="Brittany (opens in a new tab)"
-					>
-						Brittany
-					</a>
-					. Designed in figma, and code written in TypeScript and NextJs by
+					Designed in figma, and code written in TypeScript and NextJs by
 					Me☺️. Find it on{' '}
 					<a
 						className="font-semibold text-gray-200"
