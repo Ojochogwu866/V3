@@ -10,7 +10,7 @@ import MesProjets from '@/components/mes-projets';
 export default function Home() {
 	return (
 		<main className="flex h-auto w-full flex-col gap-10 px-[20px] text-[#6E6A85] md:h-screen md:px-[80px]">
-			<div className="mt-8 flex h-screen w-full items-center justify-center md:fixed md:mt-32 md:w-[40%] md:flex-1 md:items-start md:justify-start">
+			<div className="mt-12 max-md:mb-10 flex h-auto w-full items-center justify-center md:fixed md:mt-32 md:w-[40%] md:h-screen md:flex-1 md:items-start md:justify-start">
 				<Presente />
 			</div>
 			<div className="right-0 flex h-auto w-full flex-col md:absolute md:mt-[86px] md:w-1/2 md:flex-1 md:p-10">

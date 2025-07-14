@@ -13,17 +13,18 @@ export default function AllExperiencesProjects() {
 			id="experience"
 			className="mt-10 w-full scroll-mt-36 pb-20 pt-36"
 		>
-			<div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+			<div className="flex flex-col gap-10">
 				{experiences.map((experience, index) => (
 					<Experience
 						key={index}
 						organization={experience.organization}
+						period={experience.period}
 						description={experience.description}
 					/>
 				))}
 			</div>
-			<div className="mt-10 flex items-center gap-2 text-sm font-semibold text-gray-200">
-				Download Resume above for detailed reference of roles, skills applied
+			<div className="mt-16 flex items-center gap-2 text-sm font-semibold text-gray-200">
+				Download Resume above for detailed reference of roles, skills applied 
 				and achievements
 				<div>
 					<svg
@@ -47,20 +48,32 @@ export default function AllExperiencesProjects() {
 
 type ExperienceProps = {
 	organization: string;
+	period: string;
 	description: string;
 };
 
-function Experience({ organization, description }: ExperienceProps) {
+function Experience({ organization, period, description }: ExperienceProps) {
 	return (
 		<motion.section
 			variants={fadeIn('up', 'experiences', 0.2, 0.2)}
 			initial="hidden"
 			whileInView="show"
 			viewport={{ once: true, amount: 0.25 }}
-			className="max-h-[250px] w-full overflow-auto rounded-lg bg-[#0c0a1b] p-4"
+			className="w-full transition-all duration-300 hover:bg-[#0e0c1f] hover:shadow-lg hover:shadow-[#95A1F9]/10 hover:border hover:border-[#95A1F9]/20 cursor-pointer group rounded-lg"
 		>
-			<h3 className="text-lg font-semibold">{organization}</h3>
-			<p className="mt-4 text-sm leading-7 text-[#6E6A85]">{description}</p>
+			<div className="p-6 flex gap-6">
+				<div className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300 min-w-[120px]">
+					{period}
+				</div>
+				<div className="flex-1">
+					<h3 className="text-lg font-semibold text-gray-200 group-hover:text-[#95A1F9] transition-colors duration-300 mb-2">
+						{organization}
+					</h3>
+					<p className="text-sm leading-7 text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
+						{description}
+					</p>
+				</div>
+			</div>
 		</motion.section>
 	);
 }
