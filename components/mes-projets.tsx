@@ -9,7 +9,7 @@ export default function MesExpériences() {
 	const { ref } = CurrentSection('Projects', 0.5);
 	return (
 		<section ref={ref} id="projects" className="scroll-mt-36 md:px-[40px]">
-			<h2 className="pb-2 text-base font-semibold md:hidden">Projects</h2>
+			<h2 className="pb-2 text-base font-semibold">Projects</h2>
 			<div className="flex flex-col gap-10">
 				{projects.map((project, index) => (
 					<Project
