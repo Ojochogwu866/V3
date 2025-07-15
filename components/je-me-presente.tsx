@@ -23,15 +23,14 @@ export default function Presente() {
 			</p>
 
 			<nav className="mt-10 hidden md:flex">
-				<ul className="flex gap-4">
+				<ul className="flex flex-col gap-2">
 					{links.map((link) => (
 						<li key={link.extend}>
 							<Link
 								className={clsx(
-									"relative block w-fit text-base after:absolute after:block after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-[#95A1F9] after:transition after:duration-300 after:content-[''] after:hover:scale-x-100",
+									"relative block w-fit text-base transition-all duration-500 hover:text-[#95A1F9] hover:translate-x-2",
 									{
-										'border-b-[2px] border-[#95A1F9] text-[#95A1F9] transition duration-150':
-											activeSection === link.name,
+										'text-[#95A1F9] translate-x-2': activeSection === link.name,
 									}
 								)}
 								href={link.extend}
@@ -40,8 +39,16 @@ export default function Presente() {
 									setTimeOfLastClick(Date.now());
 								}}
 							>
+								<span 
+									className={clsx(
+										"absolute -left-2 top-1/2 h-1 -translate-y-1/2 bg-[#95A1F9] rounded-full transition-all duration-500",
+										{
+											'w-4': activeSection === link.name,
+											'w-0': activeSection !== link.name,
+										}
+									)}
+								/>
 								{link.name}
-								{link.name === activeSection && <span className=""></span>}
 							</Link>
 						</li>
 					))}
@@ -103,38 +110,6 @@ export default function Presente() {
 						/>
 					</svg>
 					LI
-				</a>
-
-				<a
-					className={`${styles.socials}`}
-					href="https://open.spotify.com/user/ojochogwu866"
-					target="_blank"
-					rel="noreferrer noopener"
-					aria-label="Spotify (opens in a new tab)"
-				>
-					<svg
-						width="14"
-						height="14"
-						viewBox="0 0 24 25"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M12 0.44873C5.3835 0.44873 0 5.83223 0 12.4487C0 19.0652 5.3835 24.4487 12 24.4487C18.6165 
-							24.4487 24 19.0652 24 12.4487C24 5.83223 18.6165 0.44873 12 0.44873ZM17.505 17.7707C17.358 17.9792 
-							17.127 18.0902 16.8915 18.0902C16.7415 18.0902 16.5915 18.0467 16.461 17.9537C13.6485 15.9767 8.97 
-							15.8672 5.811 16.6037C5.4105 16.6982 5.004 16.4462 4.911 16.0427C4.818 15.6392 5.067 15.2357 5.472 15.1412C8.9445 
-							14.3372 14.1345 14.4842 17.322 16.7267C17.661 16.9652 17.742 17.4317 17.505 17.7707ZM18.969 14.8442C18.822 15.0482 18.5925 
-							15.1562 18.36 15.1562C18.207 15.1562 18.0555 15.1112 17.922 15.0152C14.6595 12.6737 10.6515 12.0917 5.3025 13.1837C4.899 
-							13.2632 4.5 13.0052 4.4175 12.5987C4.3335 12.1937 4.596 11.7962 5.001 11.7137C10.7865 10.5332 15.1695 11.1932 18.7965 
-							13.7957C19.1325 14.0387 19.2105 14.5067 18.969 14.8442ZM20.448 10.9142C20.3025 11.1287 20.0655 11.2427 19.827 11.2427C19.6815 
-							11.2427 19.5345 11.2007 19.4055 11.1137C15.27 8.30723 8.9835 8.29373 4.914 9.73373C4.524 9.86873 4.095 9.66623 3.957 
-							9.27473C3.819 8.88473 4.023 8.45573 4.4145 8.31773C8.841 6.75323 15.7005 6.78623 20.25 9.87173C20.592 10.1042 20.679 10.5707 
-							20.448 10.9142Z"
-							fill="#6E6A85"
-						/>
-					</svg>{' '}
-					SP
 				</a>
 				<a
 					className={`${styles.socials}`}
