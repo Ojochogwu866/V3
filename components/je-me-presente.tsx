@@ -14,7 +14,7 @@ export default function Presente() {
 		<section className="flex w-full flex-col">
 			<h1 className="text-[50px] font-semibold">Ojochogwu Dickson</h1>
 			<p className="mt-10 text-base font-medium md:mt-4">
-				Frontend Software Engineer <br />& Technical Writer
+				Fullstack Software Engineer <br />& Technical Writer
 			</p>
 			<p className="mt-8 text-base font-normal leading-7 md:mt-2">
 				Specializing in modern web applications and system architecture.
