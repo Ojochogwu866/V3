@@ -13,7 +13,7 @@ export default function Presente() {
 	return (
 		<section className="flex w-full flex-col">
 			<h1 className="text-[50px] font-semibold">Ojochogwu Dickson</h1>
-			<p className="mt-10 text-base font-medium md:mt-4 max-w-[250px]">
+			<p className="mt-10 text-base font-medium md:mt-4">
 				Software Engineer — Web Applications & Systems Architecture | Scientific Computing
 			</p>
 			<p className="mt-8 text-base font-normal leading-7 md:mt-2">
