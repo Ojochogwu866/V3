@@ -46,41 +46,41 @@ export const experiences = [
 		role: 'Frontend Software Engineer',
 		period: 'Jan 2025 – Present',
 		description:
-			'Developed customer feedback and feature voting system with Nuxt 3 featuring SSR/CSR architecture. Implemented tenant isolation, dynamic roadmap visualizations, real-time upvoting with WebSockets, and OAuth integration with JWT token management.',
+			'Architecting comprehensive product feedback management platform with multi-workspace architecture, role-based permissions, and real-time voting systems. Contributing to technical architecture decisions and product strategy for African market expansion.',
 	},
 	{
 		organization: 'Ignite',
 		role: 'Frontend Software Engineer',
 		period: 'Apr – Dec 2024',
 		description:
-			'Led development of a Nuxt-based cloud Platform-as-a-Service (PaaS) solution. Architected scalable frontend infrastructure, engineered comprehensive monitoring systems with real-time metrics, and built environment management platform reducing configuration time by 70%.',
+			'Led development of cloud PaaS solution serving enterprise clients. Architected scalable infrastructure supporting web services and databases, while reducing developer configuration time by 70% through environment management platform.',
 	},
 	{
 		organization: 'Mlooop',
 		role: 'Fullstack Engineer (Contract)',
 		period: 'Aug – Dec 2024',
 		description:
-			'Deployed complete AWS infrastructure using CDK with infrastructure as code practices. Achieved 96/100 Lighthouse performance score, designed optimized PostgreSQL schema with sub-150ms response times, and reduced infrastructure costs by 40%.',
+			'Delivered high-performance medical platform achieving 96/100 Lighthouse score. Implemented infrastructure-as-code practices reducing costs by 40% and designed optimized data systems with sub-150ms response times.',
 	},
 	{
 		organization: 'Mediboards',
 		role: 'Fullstack Software Engineer',
 		period: '2023 – 2024',
 		description:
-			'Engineered comprehensive digital signage and patient management system for healthcare facilities. Architected sophisticated multi-tenant system with hierarchical sub-account management, ensuring NDPR and NHA compliance with robust CI/CD pipeline.',
+			'Engineered healthcare management system for multiple facilities with focus on regulatory compliance (NDPR, NHA). Architected multi-tenant platform with hierarchical management and reduced deployment time by 85%.',
 	},
 	{
 		organization: 'Clinikli',
 		role: 'Frontend Engineer',
 		period: '2022 – 2023',
 		description:
-			'Engineered scalable Vue.js application serving hundreds of monthly users, reducing patient-to-doctor matching time by 75%. Implemented advanced geospatial search system and built modular component architecture with 98% code reuse.',
+			'Built scalable healthcare marketplace connecting patients with providers. Implemented geospatial matching algorithm reducing patient-to-doctor matching time by 75% and serving hundreds of monthly users.',
 	},
 	{
 		organization: 'Sonvisage',
 		role: 'Frontend Engineer',
 		period: '2021 – 2022',
 		description:
-			'Developed pixel-perfect healthcare management platform with efficient data handling. Engineered bulk upload system handling 10,000+ records, reducing processing time from 3 minutes to 8 seconds, and achieved 65% reduction in bundle size.',
+			'Developed healthcare management platform with focus on performance optimization. Engineered bulk processing system reducing operation time from 3 minutes to 8 seconds and achieved 65% bundle size reduction.',
 	},
 ] as const;
