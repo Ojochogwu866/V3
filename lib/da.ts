@@ -1,86 +1,74 @@
 export const links = [
-	{
-		name: 'About',
-		extend: '#about',
-	},
-	{
-		name: 'Experience',
-		extend: '#experience',
-	},
-	{
-		name: 'Projects',
-		extend: '#projects',
-	},
+    {
+        name: 'About',
+        extend: '#about',
+    },
+    {
+        name: 'Experience',
+        extend: '#experience',
+    },
+    {
+        name: 'Projects',
+        extend: '#projects',
+    },
 ] as const;
 
 export const projects = [
-	{
-		project: 'Anker',
-		description:
-			'E-commerce platform for the African fabrics market. Built a scalable marketplace connecting fabric vendors with customers across Africa, featuring product catalog management, secure payment processing, and multi-currency support for regional markets.',
-		url: 'anker.ojochogwu.dev',
-	},
-	{
-		project: 'Codon',
-		description:
-			'Chemical intelligence toxicity prediction system leveraging machine learning algorithms. Developed a comprehensive platform for predicting chemical compound toxicity, environmental impact assessment, and safety analysis for research institutions and pharmaceutical companies.',
-		url: 'codonlabs.ojochogwu.dev',
-	},
-	{
-		project: 'NextGen',
-		description:
-			'High-performance mentorship platform with automated event scheduling and Google Calendar integration. Built secure APIs, real-time notifications, and seamless mentor-mentee connection system for enhanced learning experiences.',
-		url: 'nextgenhub.xyz',
-	},
-	{
-		project: 'Pathfindr',
-		description:
-			'High-performance TypeScript pathfinding library implementing multiple algorithms including Dijkstra and A* (A-star). Features flexible graph representation, type-safe implementation, comprehensive test coverage, and performance benchmarking tools.',
-		url: 'npmjs.com/package/pathfindr',
-	},
+    {
+        project: 'Flync',
+        description:
+            'Healthcare data migration platform enabling secure patient data transfers between different EMR systems. Building automated migration pipelines with data mapping, validation, and HIPAA-compliant infrastructure for healthcare providers transitioning between medical record systems.',
+        url: 'flync.ojochogwu.dev',
+    },
+    {
+        project: 'Qumira Labs',
+        description:
+            'In-silico chemical toxicity prediction platform using machine learning and computational chemistry. Developing full-stack application integrating RDKit, Mordred, and Scikit-learn for molecular analysis and toxicity assessment.',
+        url: 'qumira.ojochogwu.dev',
+    },
 ] as const;
 
 export const experiences = [
-	{
-		organization: 'Product 7',
-		role: 'Frontend Software Engineer',
-		period: 'Jan 2025 – Present',
-		description:
-			'Architecting comprehensive product feedback management platform with multi-workspace architecture, role-based permissions, and real-time voting systems. Contributing to technical architecture decisions and product strategy for African market expansion.',
-	},
-	{
-		organization: 'Ignite',
-		role: 'Frontend Software Engineer',
-		period: 'Apr – Dec 2024',
-		description:
-			'Led development of cloud PaaS solution serving enterprise clients. Architected scalable infrastructure supporting web services and databases, while reducing developer configuration time by 70% through environment management platform.',
-	},
-	{
-		organization: 'Mlooop',
-		role: 'Fullstack Engineer (Contract)',
-		period: 'Aug – Dec 2024',
-		description:
-			'Delivered high-performance medical platform achieving 96/100 Lighthouse score. Implemented infrastructure-as-code practices reducing costs by 40% and designed optimized data systems with sub-150ms response times.',
-	},
-	{
-		organization: 'Mediboards',
-		role: 'Fullstack Software Engineer',
-		period: '2023 – 2024',
-		description:
-			'Engineered healthcare management system for multiple facilities with focus on regulatory compliance (NDPR, NHA). Architected multi-tenant platform with hierarchical management and reduced deployment time by 85%.',
-	},
-	{
-		organization: 'Clinikli',
-		role: 'Frontend Engineer',
-		period: '2022 – 2023',
-		description:
-			'Built scalable healthcare marketplace connecting patients with providers. Implemented geospatial matching algorithm reducing patient-to-doctor matching time by 75% and serving hundreds of monthly users.',
-	},
-	{
-		organization: 'Sonvisage',
-		role: 'Frontend Engineer',
-		period: '2021 – 2022',
-		description:
-			'Developed healthcare management platform with focus on performance optimization. Engineered bulk processing system reducing operation time from 3 minutes to 8 seconds and achieved 65% bundle size reduction.',
-	},
+    {
+        organization: 'Product 7',
+        role: 'Frontend Software Engineer',
+        period: 'Feb 2025 – Present',
+        description:
+            'Architecting comprehensive product feedback management platform with multi-workspace architecture, role-based permissions, and real-time voting systems. Contributing to technical architecture decisions and participating in weekly product planning as key technical stakeholder.',
+    },
+    {
+        organization: 'Mlooop',
+        role: 'Software Engineer (Contract)',
+        period: 'Mar 2025 – Present',
+        description:
+            'Leading development of full-scale EMR system with complete AWS infrastructure deployment using CDK. Architected HIPAA-compliant PostgreSQL database achieving 96/100 Lighthouse score and 40% infrastructure cost reduction while maintaining 99.9% uptime for critical healthcare operations.',
+    },
+    {
+        organization: 'Ignite',
+        role: 'Frontend Software Engineer',
+        period: 'Apr 2024 – Jan 2025',
+        description:
+            'Led frontend development of Nuxt-based cloud PaaS solution supporting deployment of web services, databases, and static sites. Engineered monitoring system with real-time metrics and reduced developer configuration time by 70% through environment management platform.',
+    },
+    {
+        organization: 'Mediboards',
+        role: 'Fullstack Software Engineer (Freelance)',
+        period: 'Aug 2024 – Aug 2025',
+        description:
+            'Led technical development and product design of patient queue management platform for healthcare facilities. Architected multi-tenant system with EMR integration layer, automated patient data sync, and regulatory compliance (NDPR, NHA) while establishing robust CI/CD pipeline.',
+    },
+    {
+        organization: 'Clinikli',
+        role: 'Frontend Engineer',
+        period: 'Apr 2022 – Mar 2023',
+        description:
+            'Built scalable Vue.js healthcare platform with geospatial matching system using Google Maps API. Developed extensive library of reusable composables for API integration and optimized application performance achieving strong Lighthouse scores.',
+    },
+    {
+        organization: 'Sonvisage',
+        role: 'Frontend Engineer',
+        period: 'Mar 2021 – Feb 2022',
+        description:
+            'Developed healthcare management platform with focus on performance optimization. Engineered high-performance bulk upload system for large healthcare datasets and built responsive admin dashboard supporting daily operations for growing user base.',
+    },
 ] as const;
